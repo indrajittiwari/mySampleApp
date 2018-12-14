@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <style>
+        /*  bhoechie tab */
+        div.bhoechie-tab-container {
+            z-index: 10;
+            background-color: #ffffff;
+            padding: 0 !important;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            border: 1px solid #ddd;
+            margin-top: 0px;
+            margin-left: 50px;
+            -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            background-clip: padding-box;
+            opacity: 0.97;
+            filter: alpha(opacity=97);
+        }
+
+        div.bhoechie-tab-menu {
+            padding-right: 0;
+            padding-left: 0;
+            padding-bottom: 0;
+        }
+
+            div.bhoechie-tab-menu div.list-group {
+                margin-bottom: 0;
+            }
+
+                div.bhoechie-tab-menu div.list-group > a {
+                    margin-bottom: 0;
+                }
+
+                    div.bhoechie-tab-menu div.list-group > a .glyphicon,
+                    div.bhoechie-tab-menu div.list-group > a .fa {
+                        color: #5A55A3;
+                    }
+
+                    div.bhoechie-tab-menu div.list-group > a:first-child {
+                        border-top-right-radius: 0;
+                        -moz-border-top-right-radius: 0;
+                    }
+
+                    div.bhoechie-tab-menu div.list-group > a:last-child {
+                        border-bottom-right-radius: 0;
+                        -moz-border-bottom-right-radius: 0;
+                    }
+
+                    div.bhoechie-tab-menu div.list-group > a.active,
+                    div.bhoechie-tab-menu div.list-group > a.active .glyphicon,
+                    div.bhoechie-tab-menu div.list-group > a.active .fa {
+                        background-color: #5A55A3;
+                        background-image: #5A55A3;
+                        color: #ffffff;
+                    }
+
+                        div.bhoechie-tab-menu div.list-group > a.active:after {
+                            content: '';
+                            position: absolute;
+                            left: 100%;
+                            top: 50%;
+                            margin-top: -13px;
+                            border-left: 0;
+                            border-bottom: 13px solid transparent;
+                            border-top: 13px solid transparent;
+                            border-left: 10px solid #5A55A3;
+                        }
+
+        div.bhoechie-tab-content {
+            background-color: #ffffff;
+            /* border: 1px solid #eeeeee; */
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
+            display: none;
+        }
+
+        input[type=text] {
+            width: 100%;
+            border: 2px solid blue;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-5 col-sm-8 col-xs-9 ">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <input type="text" style="margin-left: 27px !important" name="search" class="" placeholder="Search..">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-lg-9 col-md-5 col-sm-8 col-xs-9 bhoechie-tab-container">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active text-center">
+                            Tamil Nadu
+                        </a>
+                        <a href="#" class="list-group-item text-center">
+                            Delhi
+                        </a>
+                        <a href="#" class="list-group-item text-center">
+                            Maharashtra
+                        </a>
+                        <a href="#" class="list-group-item text-center">
+                            Kerala
+                        </a>
+                        <a href="#" class="list-group-item text-center">
+                            Punjab
+                        </a>
+                        <a href="#" class="list-group-item text-center">
+                            Haryana
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                    <!-- flight section -->
+                    <div class="bhoechie-tab-content active">
+                        <img src="http://192.168.1.95:8056//Capture2.PNG" width="570" />
+                        <!--<h1 class="glyphicon glyphicon-plane" style="font-size:14em;color:#55518a"></h1>
+                        <h2 style="margin-top: 0;color:#55518a">Cooming Soon</h2>
+                        <h3 style="margin-top: 0;color:#55518a">Flight Reservation</h3>-->
+                        <!--<label>
+                            <input type="radio" name="optradio" checked>FORM 1 - Register Of Workmen - Tamil Nadu
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio">Form 12- Register of adult workers - Tamil Nadu
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio">Form 15 - Register of Leave with Wages - Tamil Nadu
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio">FORM A - Register Of Muster Roll - Tamil Nadu
+                        </label><br />-->
+
+                    </div>
+                    <!-- train section -->
+                    <div class="bhoechie-tab-content">
+                        <img src="http://192.168.1.95:8056//Capture3.PNG" width="570" />
+                        <!--<label>
+                            <input type="radio" name="optradio1" checked>Form 12- Register of adult workers - Delhi
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio1">Form 22 - Half Yearly Return - Delhi
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio1">Form W - Register of Employees - Delhi
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio1">Form 15 - Register of Leave with Wages - Delhi
+                        </label><br />-->
+                    </div>
+
+                    <!-- hotel search -->
+                    <div class="bhoechie-tab-content">
+                        <img src="http://192.168.1.95:8056//Capture4.PNG" width="570" />
+                        <!--<label>
+                            <input type="radio" name="optradio2" checked>Form J - Register of Employment - Maharashtra
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio2">Form 17- Register of adult workers - Maharashtra
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio2">Form M - Leave Register - Maharashtra
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio2">Form N - Leave Card - Maharashtra
+                        </label><br />-->
+                    </div>
+                    <div class="bhoechie-tab-content">
+                        <img src="http://192.168.1.95:8056//Capture5.PNG" width="570" />
+                        <!--<label>
+                            <input type="radio" name="optradio3" checked>Form 12- Register of adult workers - Kerala
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio3">Form BB - Service Record(Kerala)
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio3">Form H - Quarterly Report - Kerala Shops and Commercial Establishment Rules
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio3">Form 12- Register of adult workers - Kerala
+                        </label><br />-->
+
+
+                    </div>
+                    <div class="bhoechie-tab-content">
+                        <img src="http://192.168.1.95:8056//Capture6.PNG" width="570" />
+                        <!--<label>
+                            <input type="radio" name="optradio4" checked>Form E - Register of Deductions - Punjab
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio4">Form IV - Overtime Register For Workers - Punjab Minimum Wages Act
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio4">Form 12- Register of adult workers - Punjab
+                        </label><br />
+                        <label>
+                            <input type="radio" name="optradio4">Form 15 - Register of Leave with Wages - Punjab
+                        </label><br />-->
+                    </div>
+                    <div class="bhoechie-tab-content">
+                        <img src="http://192.168.1.95:8056//Capture7.PNG" width="570" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $("div.bhoechie-tab-menu>div.list-group>a").click(function (e) {
+            e.preventDefault();
+            $(this).siblings('a.active').removeClass("active");
+            $(this).addClass("active");
+            var index = $(this).index();
+            $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+            $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+        });
+    });
+</script>
